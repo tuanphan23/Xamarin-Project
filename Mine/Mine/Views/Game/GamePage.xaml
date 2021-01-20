@@ -16,6 +16,9 @@
                 HeightRequest="200"
                 />
 
+         <Button Clicked="GameButton_Clicked"
+                 Text="Go RedHawks"
+                 />
 
     </StackLayout>
 
