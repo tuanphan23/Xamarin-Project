@@ -14,7 +14,9 @@
     <MasterDetailPage.Detail>
         <NavigationPage>
             <x:Arguments>
+
                 <views:AboutPage />
+
             </x:Arguments>
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
