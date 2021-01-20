@@ -7,7 +7,7 @@
          VerticalOptions="FillAndExpand"
          HorizontalOptions="CenterAndExpand">
 
-         <Label Text="Welcome to my HomeWork!"
+         <Label Text="Welcome to my HomeWork"
                 FontSize="Large"/>
         
     </StackLayout>
