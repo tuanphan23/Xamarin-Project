@@ -18,8 +18,7 @@ namespace Mine.Services
                 new ItemModel { Id = Guid.NewGuid().ToString(), Text = "The Meerschaum Pipe", Description="A million-dollar pipe.", Value=4 },
                 new ItemModel { Id = Guid.NewGuid().ToString(), Text = "President’s book", Description="A book holds all the secrets to the history of the World.", Value=5 },
                 new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Flaming gun", Description="A magical gun that can cause enemies to explode with solar energy.", Value=7 },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Cape of the captain", Description="A marvelous cape with the ability to reduce the damage of the enemies.", Value=9 },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Declaration of Independence", Description="Map to your next clue, increases confidence making you feel stronger.", Value=8 }
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Cape of the captain", Description="A marvelous cape with the ability to reduce the damage of the enemies.", Value=9 }
             };
         }
 
