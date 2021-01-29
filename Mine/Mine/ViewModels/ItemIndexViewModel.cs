@@ -39,7 +39,7 @@ namespace Mine.ViewModels
             try
             {
                 Items.Clear();
-                var items = await DataStore.GetItemsAsync(true);
+                var items = await DataStore.IndexAsync(true);
                 foreach (var item in items)
                 {
                     Items.Add(item);
@@ -53,6 +53,18 @@ namespace Mine.ViewModels
             {
                 IsBusy = false;
             }
+        }
+
+        /// <summary>
+        /// Read an item from the datastore
+        /// </summary>
+        /// <param name="id">ID of the Record</param>
+        /// <returns>The Record from ReadAsync</returns>
+        public async Task<ItemModel> ReadAsync(string id)
+        {
+            var result = await DataStore.ReadAsync(id);
+
+            return result;
         }
     }
 }
