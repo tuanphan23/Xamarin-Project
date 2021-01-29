@@ -14,6 +14,7 @@
         <Label Text="Description:" FontSize="Medium" />
         <Label Text="{Binding Item.Description}" d:Text="Item description" FontSize="Small"/>
 
+
         <Label Text="Value:" FontSize="Medium" />
         <Label Text="{Binding Item.Value}" d:Text="Item Vallue" FontSize="Small"/>
 
