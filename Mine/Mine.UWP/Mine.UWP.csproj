@@ -158,6 +158,13 @@
       <Name>Mine</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="icon_add.png" />
+    <None Include="icon_cancel.png" />
+    <None Include="icon_delete.png" />
+    <None Include="icon_save.png" />
+    <None Include="icon_update.png" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
