@@ -11,18 +11,18 @@ namespace Mine.Views
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
-    public partial class ItemDeletePage : ContentPage
+    public partial class ItemReadPage : ContentPage
     {
         ItemReadViewModel viewModel;
 
-        public ItemDeletePage(ItemReadViewModel viewModel)
+        public ItemReadPage(ItemReadViewModel viewModel)
         {
             InitializeComponent();
 
             BindingContext = this.viewModel = viewModel;
         }
 
-        public ItemDeletePage()
+        public ItemReadPage()
         {
             InitializeComponent();
 
