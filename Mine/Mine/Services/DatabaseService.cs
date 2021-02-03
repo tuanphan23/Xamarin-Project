@@ -39,7 +39,7 @@ namespace Mine.Services
         /// <summary>
         /// Insert new item into the database
         /// </summary>
-        /// <param name="forceRefresh"></param>
+        /// <param name="item"></param>
         public async Task<bool> CreateAsync(ItemModel item)
         {
             if (item == null)
@@ -66,9 +66,22 @@ namespace Mine.Services
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Retrieve the item with corresponding id from database
+        /// </summary>
+        /// <param name="id"></param>
         public Task<ItemModel> ReadAsync(string id)
         {
-            throw new NotImplementedException();
+            if (id == null)
+            {
+                return null;
+            }
+
+            // Call the Database to read the ID
+            // Using Linq syntax  Find the first record that has the ID that matches
+            var result = Database.Table<ItemModel>().FirstOrDefaultAsync(m => m.Id.Equals(id));
+
+            return result;
         }
 
         /// <summary>
