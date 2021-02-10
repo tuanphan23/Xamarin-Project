@@ -104,7 +104,7 @@ namespace UnitTests.Models
             DiceHelper.ForcedRandomValue = 5;
 
             // Act
-            var result = DiceHelper.RollDice(1, 1);
+            var result = DiceHelper.RollDice(1, 10);
 
             // Reset
             DiceHelper.ForceRollsToNotRandom = false;
