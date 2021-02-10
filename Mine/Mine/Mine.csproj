@@ -22,6 +22,7 @@
   <ItemGroup>
     <Folder Include="Views\Game\" />
     <Folder Include="Views\Items\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Views\Items\ItemReadPage %28copy%29.xaml.cs" />
