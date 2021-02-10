@@ -95,5 +95,22 @@ namespace UnitTests.Models
             // Assert 
             Assert.AreEqual(1, result);
         }
+
+        [Test]
+        public void RollDice_Invalid_Roll_Fixed_5_Should_Return_5()
+        {
+            // Arrange
+            DiceHelper.ForceRollsToNotRandom = true;
+            DiceHelper.ForcedRandomValue = 5;
+
+            // Act
+            var result = DiceHelper.RollDice(1, 1);
+
+            // Reset
+            DiceHelper.ForceRollsToNotRandom = false;
+
+            // Assert 
+            Assert.AreEqual(5, result);
+        }
     }
 }
